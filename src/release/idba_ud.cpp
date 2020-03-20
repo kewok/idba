@@ -343,7 +343,6 @@ void Assemble(HashGraph &hash_graph)
     {
         int bubble = contig_graph.RemoveBubble();
         cout << "merge bubble " << bubble << endl;
-        contig_graph.MergeSimilarPath();
     }
 
     if (!option.is_no_coverage)
@@ -361,7 +360,6 @@ void Assemble(HashGraph &hash_graph)
         if (ratio < 2.0 / expected_coverage)
             ratio = 2.0 / expected_coverage;
         contig_graph.IterateLocalCoverage(option.min_contig, ratio, min_cover, 1e100, 1.1);
-        contig_graph.MergeSimilarPath();
     }
 
     deque<Sequence> multi_contigs;
