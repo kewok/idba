@@ -3,7 +3,7 @@ package:
   version: "1.1.4_kwo_modified"
 
 source:
-  path: /home/kwo/wormlab_packages/idba/idba
+  path: /home/okam0009/shared/wormlab_packages/idba/idba
 
 build:
     number: 0
